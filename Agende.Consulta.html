@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Agende a sua consulta - AtivaCor</title> 
+        <style>  
+        #header { 
+            background-color: white; 
+             padding: 60px; 
+             text-align: center; 
+             border-bottom: 60px; 
+ 
+        } 
+        #main{ 
+            background-color:#003674; 
+            padding: 200px; 
+            text-align: center; 
+            border-bottom: 200px; 
+ 
+        } 
+        #footer { 
+            background-color: white; 
+            padding: 40px; 
+            text-align: center; 
+            border-bottom: 40px; 
+           } 
+        table{ 
+            background-color: aliceblue; 
+            text-align: center; 
+        } 
+            
+        </style> 
+    </head> 
+    <body> 
+        <div id="header"> 
+            <center> 
+            <img src="https://i.postimg.cc/VkN1C0Sq/Imagem-do-Whats-App-de-2025-07-20-s-14-32-09-ada5b619-removebg-preview.png" height= "300px" width="300px"> 
+            </div> 
+            </center> 
+            <div id="main"> 
+            <h2 style="color: white;">Agendamento de Consulta</h2> 
+     
+        <form action="#" method="post"> 
+        <label for="nome"style="color: white;">Nome completo:</label><br> 
+        <input type="text" id="nome" name="nome" required><br><br> 
+ 
+        <label for="cpf"style="color: white;">CPF:</label><br> 
+        <input type="text" id="cpf" name="cpf" pattern="\d{11}" title="Digite 11 números, apenas dígitos" required><br><br> 
+ 
+        <label for="idade"style="color: white;">Idade:</label><br> 
+        <input type="number" id="idade" name="idade" min="0" required><br><br> 
+ 
+        <label for="especialidade"style="color: white;">Especialidade:</label><br> 
+        <select id="especialidade" name="especialidade" required> 
+            <option value="">Selecione</option> 
+            <option value="Cardiologista - João Ferreira">Cardiologista</option> 
+            <option value="Endocrinologista - Karolina Maria">Endocrinologista</option> 
+            <option value="Nefrologista - Pablo Cunha">Nefrologista</option> 
+            <option value="Nutricionista - Teodoro Barbosa">Nutricionista</option> 
+            <option value="Geriatra - Marina Maia">Geriatra</option> 
+        </select><br><br> 
+ 
+        <input type="submit" value="Agendar Consulta"> 
+        </form> 
+        <script> 
+            function mostrarAlerta() { 
+            alert("Consulta agendada"); 
+            } 
+        </script> 
+   
+                <center> 
+        <table border="1"> 
+            <tr>  
+                <th>Especialidade</th> 
+                <th>Valor</th> 
+                <th>Nome do profissional</th> 
+            </tr> 
+            <tr> 
+                <td>Cardiologista</td> 
+                <td>R$ 200,00</td> 
+                <td> Julio Ferreira</td> 
+            </tr> 
+            <tr> 
+                <td>Endocrinologista</td> 
+                <td>R$ 650,00</td> 
+                <td> Karolina Maria</td> 
+            </tr> 
+            <tr> 
+                <td>Nefrologista</td> 
+                <td>R$ 225,00</td> 
+                <td> Pablo Cunha</td> 
+            </tr> 
+            <tr> 
+                <td>Nutricionista</td> 
+                <td>R$ 150,00</td> 
+                <td> Teodoro Barbosa</td> 
+            </tr> 
+            <tr> 
+                <td>Geriatra</td> 
+                <td>R$ 180,00</td> 
+                <td> Marina Maia</td> 
+ 
+            </tr> 
+            <tr> 
+                <td>Psicologo</td> 
+                <td>R$ 205,00</td> 
+                <td>Laura laianny</td> 
+                 
+            </tr> 
+        </center> 
+        </table> 
+            </div> 
+             <div id="footer"> 
+                 
+             </div> 
+    </body> 
+</html>
